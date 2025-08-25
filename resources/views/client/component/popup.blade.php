@@ -28,8 +28,13 @@
         }
     });
 
-    // Khi nhấn nút X, ẩn modal
+    // Khi nhấn nút X
     modalCloseBtn.addEventListener("click", () => {
+        // Hỏi người dùng có muốn ẩn vĩnh viễn không
+        const neverShow = confirm("Bạn có muốn không bao giờ hiện lại modal này nữa không?");
+        if (neverShow) {
+            localStorage.setItem("hideStaticModal", "true"); // lưu trạng thái vĩnh viễn
+        }
         modal.classList.add("hidden");
     });
 </script>

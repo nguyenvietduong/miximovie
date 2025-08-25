@@ -1,6 +1,6 @@
-<div id="controls-carousel" class="relative w-full z-30" data-carousel="static">
+<div id="controls-carousel" class="relative w-full z-30 mb-5" data-carousel="static">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden md:h-[800px]">
+    <div class="relative h-56 overflow-hidden md:h-[750px]">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <!-- Ảnh nền -->
@@ -25,7 +25,7 @@
                     </div>
 
                     <!-- Mô tả (ẩn ở mobile) -->
-                    <p class="hidden md:block text-sm md:text-base opacity-90 line-clamp-3 leading-relaxed">
+                    <p class="hidden md:block text-sm md:text-[14px] opacity-90 line-clamp-3 leading-relaxed">
                         Bộ phim kể về hành trình tình yêu trong sáng nhưng đầy sóng gió của những người trẻ tuổi khi vừa
                         bước vào ngưỡng cửa trưởng thành.
                     </p>
@@ -323,6 +323,18 @@
             </div>
         </div>
     </div>
+
+    <div id="thumbs"
+        class="absolute bottom-10 right-10 z-30 flex space-x-2 p-2 rounded-xl pointer-events-none">
+        @for ($i = 0; $i
+        < 5; $i++)
+            <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2022/01/10-4-e1642673611991.jpg"
+            alt="thumb {{ $i+1 }}"
+            class="thumb w-[66px] h-[41px] object-cover rounded-sm border-2 border-transparent"
+            data-index="{{ $i }}" />
+        @endfor
+    </div>
+
     <!-- Slider controls -->
     <button type="button"
         class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
