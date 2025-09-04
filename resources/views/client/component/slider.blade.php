@@ -324,17 +324,6 @@
         </div>
     </div>
 
-    <div id="thumbs"
-        class="absolute bottom-10 right-10 z-30 flex space-x-2 p-2 rounded-xl pointer-events-none">
-        @for ($i = 0; $i
-        < 5; $i++)
-            <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2022/01/10-4-e1642673611991.jpg"
-            alt="thumb {{ $i+1 }}"
-            class="thumb w-[66px] h-[41px] object-cover rounded-sm border-2 border-transparent"
-            data-index="{{ $i }}" />
-        @endfor
-    </div>
-
     <!-- Slider controls -->
     <button type="button"
         class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
