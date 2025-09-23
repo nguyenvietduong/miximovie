@@ -17,9 +17,11 @@
                             <!-- txt -->
                             <div class="col">
                                 <img src="{{ $item['title_url'] }}" alt="Image" style="margin-bottom: 5px">
-
+                                <h1 class="tt-2-banner-title" style="font-size: 10px">
+                                    {{ $item['original_title'] }}
+                                </h1>
                                 @if (isset($item['genres']))
-                                @foreach ($item['genres'] as $item_genre)   
+                                @foreach ($item['genres'] as $item_genre)
                                 <span class="tt-2-banner-genre">{{ $item_genre['name'] }}</span>
                                 @endforeach
                                 @endif
@@ -67,10 +69,12 @@
     .tt-2-banner-genre {
         font-size: 8px;
         font-weight: 500;
-        background: #ff4757;
-        color: #fff;
-        padding: 4px 10px;
-        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.3);
+        /* nền trắng mờ, alpha 0.3 */
+        color: white;
+        /* text màu đỏ để nổi bật trên nền trắng mờ */
+        padding: 6px 10px;
+        border-radius: 5px;
         text-transform: uppercase;
         letter-spacing: 1px;
     }

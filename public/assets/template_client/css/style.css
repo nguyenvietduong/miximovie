@@ -1811,7 +1811,8 @@ input {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  margin-bottom: clamp(10px, 0.79vw, 15px);
+  color: #FFD875;
+  margin-bottom: clamp(0px, 0.79vw, 0px);
 }
 .tt-2-banner-descr {
   font-size: clamp(15px, 0.95vw, 18px);
