@@ -188,4 +188,9 @@ return [
 
     'asset_admin_path' => env('ASSET_ADMIN_PATH', 'assets/template_admin/assets'),
     'asset_client_path' => env('ASSET_CLIENT_PATH', 'assets/template_client'),
+    'cdn' => [
+        'backdrop_path' => env('BACKDROP_PATH', 'https://static.nutscdn.com/vimg/1920-0/'),
+        'poster_path'   => env('POSTER_PATH', 'https://static.nutscdn.com/vimg/1920-0/'),
+        'title_path'    => env('TITLE_PATH', 'https://static.nutscdn.com/vimg/0-260/'),
+    ],
 ];

@@ -18,7 +18,7 @@ class HomeController extends Controller
 
     private function bannerSectionStartItems()
     {
-        $response = Http::get('https://rophimapi.net/v1/movie/hot');
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.hot'));
 
         if ($response->successful()) {
             $movies = $response->json();
@@ -38,9 +38,9 @@ class HomeController extends Controller
                     $posterPath = $posters[2]['path'] ?? ($posters[0]['path'] ?? null);
                     $titlePath = $titles[0]['path'] ?? ($titles[0]['path'] ?? null);
 
-                    $item['backdrop_url'] = $this->formatImageUrl($backdropPath, 'https://static.nutscdn.com/vimg/1920-0/');
-                    $item['poster_url'] = $this->formatImageUrl($posterPath, 'https://static.nutscdn.com/vimg/1920-0/');
-                    $item['title_url'] = $this->formatImageUrl($titlePath, 'https://static.nutscdn.com/vimg/0-260/');
+                    $item['backdrop_url'] = $this->formatImageUrl($backdropPath, config("app.cdn.backdrop_path"));
+                    $item['poster_url'] = $this->formatImageUrl($posterPath, config("app.cdn.poster_path"));
+                    $item['title_url'] = $this->formatImageUrl($titlePath, config("app.cdn.title_path"));
                 }
 
                 return $movies['result'];
@@ -50,23 +50,15 @@ class HomeController extends Controller
         return [];
     }
 
-    private function formatImageUrl($path, $https = null)
+    private function formatImageUrl($path, $baseUrl = null)
     {
-        if (!$path) {
+        if (empty($path)) {
             return null;
         }
 
-        $parts = explode("/", $path);
-        array_shift($parts);
-        array_shift($parts);
+        $parts = explode("/", $path, 3);
+        $cleanPath = $parts[2] ?? $path;
 
-        $cleanPath = implode("/", $parts);
-
-        if ($https == null) {
-
-            return $cleanPath;
-        }
-
-        return $https . $cleanPath;
+        return $baseUrl ? rtrim($baseUrl, '/') . '/' . $cleanPath : $cleanPath;
     }
 }
