@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Http; // thiếu cái này
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
@@ -13,11 +13,14 @@ class HomeController extends Controller
     {
         $bannerSectionStartItems = $this->bannerSectionStartItems();
         $top10TvSeriesTodayItems = $this->top10TvSeriesTodayItems();
+        $top10MoviesTodayItems = $this->top10MoviesTodayItems();
         $latestAnimeCollectionItems = $this->latestAnimeCollectionItems();
         $koreanCinemaScreeningItems = $this->koreanCinemaScreeningItems();
-        dd($koreanCinemaScreeningItems);
+        $koreanMoviesHotItems = $this->koreanMoviesHotItems();
+        $chinaMoviesHotItems = $this->chinaMoviesHotItems();
+        $USUKMoviesHotItems = $this->USUKMoviesHotItems();
 
-        return view(self::PATH_VIEW . __FUNCTION__, compact('bannerSectionStartItems', 'top10TvSeriesTodayItems', 'latestAnimeCollectionItems', 'koreanCinemaScreeningItems'));
+        return view(self::PATH_VIEW . __FUNCTION__, compact('bannerSectionStartItems', 'koreanMoviesHotItems', 'chinaMoviesHotItems', 'USUKMoviesHotItems', 'top10TvSeriesTodayItems', 'top10MoviesTodayItems', 'latestAnimeCollectionItems', 'koreanCinemaScreeningItems'));
     }
 
     private function bannerSectionStartItems()
@@ -61,9 +64,9 @@ class HomeController extends Controller
         return [];
     }
 
-    private function top10TvSeriesTodayItems()
+    private function koreanMoviesHotItems()
     {
-        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.top10TvSeriesTodayItems'));
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_1'));
 
         if ($response->successful()) {
             $movies = $response->json();
@@ -92,9 +95,133 @@ class HomeController extends Controller
         return [];
     }
 
+    private function chinaMoviesHotItems()
+    {
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_1'));
+
+        if ($response->successful()) {
+            $movies = $response->json();
+
+            if (
+                !empty($movies['status'])
+                && $movies['status'] === true
+                && ($movies['msg'] ?? '') === 'Thành công.'
+                && !empty($movies['result'])
+            ) {
+                foreach ($movies['result']['collections'][1]['movies'] as &$item) {
+                    $backdrops = $item['images']['backdrops'] ?? [];
+                    $posters   = $item['images']['posters'] ?? [];
+
+                    $backdropPath = $backdrops[random_int(0, count($backdrops) - 1)]['path'] ?? null;
+                    $posterPath   = $posters[random_int(0, count($posters) - 1)]['path'] ?? null;
+
+                    $item['backdrop_url'] = $this->formatImageUrl($backdropPath, config("app.cdn.backdrop_path"));
+                    $item['poster_url']   = $this->formatImageUrl($posterPath, config("app.cdn.poster_path"));
+                }
+
+                return $movies['result']['collections'][1]['movies'];
+            }
+        }
+
+        return [];
+    }
+
+    private function USUKMoviesHotItems()
+    {
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_1'));
+
+        if ($response->successful()) {
+            $movies = $response->json();
+
+            if (
+                !empty($movies['status'])
+                && $movies['status'] === true
+                && ($movies['msg'] ?? '') === 'Thành công.'
+                && !empty($movies['result'])
+            ) {
+                foreach ($movies['result']['collections'][2]['movies'] as &$item) {
+                    $backdrops = $item['images']['backdrops'] ?? [];
+                    $posters   = $item['images']['posters'] ?? [];
+
+                    $backdropPath = $backdrops[random_int(0, count($backdrops) - 1)]['path'] ?? null;
+                    $posterPath   = $posters[random_int(0, count($posters) - 1)]['path'] ?? null;
+
+                    $item['backdrop_url'] = $this->formatImageUrl($backdropPath, config("app.cdn.backdrop_path"));
+                    $item['poster_url']   = $this->formatImageUrl($posterPath, config("app.cdn.poster_path"));
+                }
+
+                return $movies['result']['collections'][2]['movies'];
+            }
+        }
+
+        return [];
+    }
+
+    private function top10TvSeriesTodayItems()
+    {
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_2'));
+
+        if ($response->successful()) {
+            $movies = $response->json();
+
+            if (
+                !empty($movies['status'])
+                && $movies['status'] === true
+                && ($movies['msg'] ?? '') === 'Thành công.'
+                && !empty($movies['result'])
+            ) {
+                foreach ($movies['result']['collections'][0]['movies'] as &$item) {
+                    $backdrops = $item['images']['backdrops'] ?? [];
+                    $posters   = $item['images']['posters'] ?? [];
+
+                    $backdropPath = $backdrops[random_int(0, count($backdrops) - 1)]['path'] ?? null;
+                    $posterPath   = $posters[random_int(0, count($posters) - 1)]['path'] ?? null;
+
+                    $item['backdrop_url'] = $this->formatImageUrl($backdropPath, config("app.cdn.backdrop_path"));
+                    $item['poster_url']   = $this->formatImageUrl($posterPath, config("app.cdn.poster_path"));
+                }
+
+                return $movies['result']['collections'][0]['movies'];
+            }
+        }
+
+        return [];
+    }
+
+    private function top10MoviesTodayItems()
+    {
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_2'));
+
+        if ($response->successful()) {
+            $movies = $response->json();
+
+            if (
+                !empty($movies['status'])
+                && $movies['status'] === true
+                && ($movies['msg'] ?? '') === 'Thành công.'
+                && !empty($movies['result'])
+            ) {
+                foreach ($movies['result']['collections'][2]['movies'] as &$item) {
+                    $backdrops = $item['images']['backdrops'] ?? [];
+                    $posters   = $item['images']['posters'] ?? [];
+
+                    $backdropPath = $backdrops[random_int(0, count($backdrops) - 1)]['path'] ?? null;
+                    $posterPath   = $posters[random_int(0, count($posters) - 1)]['path'] ?? null;
+
+                    $item['backdrop_url'] = $this->formatImageUrl($backdropPath, config("app.cdn.backdrop_path"));
+                    $item['poster_url']   = $this->formatImageUrl($posterPath, config("app.cdn.poster_path"));
+                }
+
+                return $movies['result']['collections'][2]['movies'];
+            }
+        }
+
+        return [];
+    }
+
     private function latestAnimeCollectionItems()
     {
-        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.latestAnimeCollectionItems'));
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_3'));
 
         if ($response->successful()) {
             $movies = $response->json();
@@ -125,7 +252,7 @@ class HomeController extends Controller
 
     private function koreanCinemaScreeningItems()
     {
-        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.koreanCinemaScreeningItems'));
+        $response = Http::get(config('api.movie_api.base_url') . config('api.movie_api.endpoints.collection_list_page_6'));
 
         if ($response->successful()) {
             $movies = $response->json();
@@ -136,7 +263,7 @@ class HomeController extends Controller
                 && ($movies['msg'] ?? '') === 'Thành công.'
                 && !empty($movies['result'])
             ) {
-                dd($movies['result']['collections'][3]);
+                // dd($movies['result']['collections'][3]);
                 foreach ($movies['result']['collections'][3]['movies'] as &$item) {
                     $backdrops = $item['images']['backdrops'] ?? [];
                     $posters   = $item['images']['posters'] ?? [];
@@ -148,7 +275,7 @@ class HomeController extends Controller
                     $item['poster_url']   = $this->formatImageUrl($posterPath, config("app.cdn.poster_path"));
                 }
 
-                return $movies['result']['collections'][2]['movies'];
+                return $movies['result']['collections'][3]['movies'];
             }
         }
 

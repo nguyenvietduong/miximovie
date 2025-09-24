@@ -3,11 +3,13 @@
         <div class="tt-footer-top">
             <a href="#"><img src="{{ asset(config('app.asset_client_path') . '/image/logo.png') }}" alt="logo"></a>
             <div class="tt-footer-top__links">
-                <a href="index-2.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Blogs</a>
-                <a href="pricing-plan.html">Pricing Plan</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="index-2.html">Trang Chủ</a>
+                <a href="about.html">Thể Loại</a>
+                <a href="#">Phim Lẻ</a>
+                <a href="pricing-plan.html">Phim Bộ</a>
+                <a href="contact.html">Quốc Gia</a>
+                <a href="contact.html">Diễn Viên</a>
+                <a href="contact.html">Liên hệ</a>
             </div>
         </div>
 

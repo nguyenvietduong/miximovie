@@ -7,6 +7,11 @@
 </head>
 @stack('style')
 <body class="dark-mode p-0">
+    
+    <!-- BACK TO TOP SECTION START -->
+    @include('client.component.back-to-top')
+    <!-- BACK TO TOP SECTION END -->
+
     <!-- search modal -->
     <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
         <button class="ul-search-closer"><i class="flaticon-close-1"></i></button>
@@ -130,8 +135,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!-- HEADER SECTION START -->
     @include('client.component.header')

@@ -243,152 +243,30 @@
             <!-- slider -->
             <div class="tt-2-upcoming-movies-slider swiper">
                 <div class="swiper-wrapper">
+
+                    @foreach ($koreanMoviesHotItems as $item)
                     <!-- single movie -->
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                                <img src="{{ $item['poster_url'] }}" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/4k-icon.svg') }}" alt="icon"> {{ $item['quality'] }} Quality</span>
                                     </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                    <span class="tt-2-trending-movie-genres">{{ $item['english_title'] }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
 
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -408,152 +286,30 @@
             <!-- slider -->
             <div class="tt-2-upcoming-movies-slider swiper">
                 <div class="swiper-wrapper">
+
+                    @foreach ($chinaMoviesHotItems as $item)
                     <!-- single movie -->
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                                <img src="{{ $item['poster_url'] }}" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/4k-icon.svg') }}" alt="icon"> {{ $item['quality'] }} Quality</span>
                                     </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                    <span class="tt-2-trending-movie-genres">{{ $item['english_title'] }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
 
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -573,156 +329,35 @@
             <!-- slider -->
             <div class="tt-2-upcoming-movies-slider swiper">
                 <div class="swiper-wrapper">
+
+                    @foreach ($chinaMoviesHotItems as $item)
                     <!-- single movie -->
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                                <img src="{{ $item['poster_url'] }}" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/4k-icon.svg') }}" alt="icon"> {{ $item['quality'] }} Quality</span>
                                     </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                    <span class="tt-2-trending-movie-genres">{{ $item['english_title'] }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
 
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- single movie -->
-                    <div class="swiper-slide">
-                        <div class="tt-2-upcoming-movie">
-                            <div class="tt-2-upcoming-movie-img">
-                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
-                            </div>
-
-                            <div class="tt-2-trending-movie-txt">
-                                <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
-                                    <div class="tt-2-trending-movie-infos">
-                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
-                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
-                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
-                                    </div>
-                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- UPCOMING MOVIES SECTION END -->
 
     <!-- TRENDING MOVIES SECTION START -->
@@ -978,8 +613,7 @@
                             <img src="{{ $item['poster_url'] }}" alt="Web Series Poster">
                         </div>
                         <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title" 
-                                    style="
+                            <h3 class="tt-2-web-series-item-title" style="
                                        display:-webkit-box;
                                        -webkit-line-clamp:2;
                                        -webkit-box-orient:vertical;
@@ -991,13 +625,10 @@
                             @php($stars = (int) round((float)(parseImdbRating($item['imdb_rating'])) / 2))
 
                             <div class="tt-2-web-series-item-rating">
-                                @for ($i = 1; $i <= 5; $i++)
-                                    @php($fill = $i <= $stars ? '#FF9046' : '#7A7976')
-                                    <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z"
-                                            fill="{{ $fill }}" />
+                                @for ($i = 1; $i <= 5; $i++) @php($fill=$i <=$stars ? '#FF9046' : '#7A7976' ) <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="{{ $fill }}" />
                                     </svg>
-                                @endfor
+                                    @endfor
                             </div>
 
                             <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
@@ -1010,7 +641,45 @@
         </div>
     </section>
 
-    {{-- --------------------------------------------------------- --}}
+    <section class="tt-2-trending-movies tt-section-spacing">
+        <div class="tt-2-container">
+            <!-- heading -->
+            <div class="tt-2-trending-movies-heading text-center">
+                <span class="icon"><img src="{{ asset(config('app.asset_client_path') . '/img/trending-movie-icon.svg') }}" alt="icon"></span>
+                <h2 class="tt-2-section-title">Top 10 phim lẻ hôm nay</h2>
+            </div>
+
+            <!-- trending movies slider -->
+            <div class="swiper tt-2-trending-movies-slider">
+                <div class="swiper-wrapper">
+
+                    @foreach ($top10MoviesTodayItems as $item)
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-trending-movie">
+                            <div class="tt-2-trending-movie-img">
+                                <img src="{{ $item['poster_url'] }}" alt="Movie Poster">
+                            </div>
+                            <div class="tt-2-trending-movie-txt">
+                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/4k-icon.svg') }}" alt="icon"> {{ $item['quality'] }} Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">{{ $item['english_title'] }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="tt-2-web-series tt-section-spacing">
         <div class="tt-2-container">
@@ -1030,8 +699,7 @@
                             <img src="{{ $item['poster_url'] }}" alt="Web Series Poster">
                         </div>
                         <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title" 
-                                    style="
+                            <h3 class="tt-2-web-series-item-title" style="
                                        display:-webkit-box;
                                        -webkit-line-clamp:2;
                                        -webkit-box-orient:vertical;
@@ -1043,13 +711,10 @@
                             @php($stars = (int) round((float)(parseImdbRating($item['imdb_rating'])) / 2))
 
                             <div class="tt-2-web-series-item-rating">
-                                @for ($i = 1; $i <= 5; $i++)
-                                    @php($fill = $i <= $stars ? '#FF9046' : '#7A7976')
-                                    <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z"
-                                            fill="{{ $fill }}" />
+                                @for ($i = 1; $i <= 5; $i++) @php($fill=$i <=$stars ? '#FF9046' : '#7A7976' ) <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="{{ $fill }}" />
                                     </svg>
-                                @endfor
+                                    @endfor
                             </div>
 
                             <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
@@ -1069,8 +734,8 @@
         <div class="tt-2-container">
             <!-- heading -->
             <div class="tt-2-posts-heading d-flex align-items-center justify-content-between gap-4">
-                <h2 class="tt-2-section-title mb-0">LATEST NEWS AND POSTS</h2>
-                <a href="#" class="tt-2-btn">View All News</a>
+                <h2 class="tt-2-section-title mb-0">ĐÁNH GIÁ VỀ WEBSITE</h2>
+                <a href="#" class="tt-2-btn">Xem Tất Cả</a>
             </div>
 
             <!-- posts -->
@@ -1079,17 +744,25 @@
                 <div class="col">
                     <div class="tt-2-post">
                         <div class="tt-2-post-img">
-                            <img src="assets/img/post-1.jpg" alt="Post Image">
-                            <span class="date"><span class="number">21</span><span class="txt">Feb</span></span>
+                            <img src="https://ticstube-html.temptics.com/assets/img/post-1.jpg" alt="Review Image">
+                            <span class="date"><span class="number">10</span><span class="txt">Sep</span></span>
                         </div>
 
                         <div class="tt-2-post-txt">
                             <div class="tt-2-post-infos">
-                                <div class="tt-2-post-info"><img src="assets/img/user-icon-2.svg" alt="icon"> By Admin</div>
-                                <div class="tt-2-post-info"><img src="assets/img/comment-icon.svg" alt="icon"> 2 Comments</div>
+                                <div class="tt-2-post-info"><img src="{{ asset(config('app.asset_client_path') . '/img/user-icon-2.svg') }}" alt="icon"> Người dùng: Minh Anh</div>
+                                <div class="tt-2-post-info"><img src="{{ asset(config('app.asset_client_path') . '/img/comment-icon.svg') }}" alt="icon"> 5 Sao</div>
                             </div>
-                            <h3 class="tt-2-post-title"><a href="blog-details.html">How Accessibility Features Are Making Streaming Inclusive</a></h3>
-                            <a href="blog-details.html" class="tt-2-post-btn">Read More</a>
+                            <h3 class="tt-2-post-title" style="
+                            display:-webkit-box;
+                            -webkit-line-clamp:2;
+                            -webkit-box-orient:vertical;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            margin-top: 5px">
+                                <a href="#">“Xem phim mượt, hình ảnh sắc nét, mình rất hài lòng!”</a>
+                            </h3>
+                            <a href="#" class="tt-2-post-btn">Xem Chi Tiết</a>
                         </div>
                     </div>
                 </div>
@@ -1098,17 +771,25 @@
                 <div class="col">
                     <div class="tt-2-post">
                         <div class="tt-2-post-img">
-                            <img src="assets/img/post-2.jpg" alt="Post Image">
-                            <span class="date"><span class="number">21</span><span class="txt">Feb</span></span>
+                            <img src="https://ticstube-html.temptics.com/assets/img/post-1.jpg" alt="Review Image">
+                            <span class="date"><span class="number">05</span><span class="txt">Sep</span></span>
                         </div>
 
                         <div class="tt-2-post-txt">
                             <div class="tt-2-post-infos">
-                                <div class="tt-2-post-info"><img src="assets/img/user-icon-2.svg" alt="icon"> By Admin</div>
-                                <div class="tt-2-post-info"><img src="assets/img/comment-icon.svg" alt="icon"> 2 Comments</div>
+                                <div class="tt-2-post-info"><img src="{{ asset(config('app.asset_client_path') . '/img/user-icon-2.svg') }}" alt="icon"> Người dùng: Quang Huy</div>
+                                <div class="tt-2-post-info"><img src="{{ asset(config('app.asset_client_path') . '/img/comment-icon.svg') }}" alt="icon"> 5 Sao</div>
                             </div>
-                            <h3 class="tt-2-post-title"><a href="blog-details.html">How Accessibility Features Are Making Streaming Inclusive</a></h3>
-                            <a href="blog-details.html" class="tt-2-post-btn">Read More</a>
+                            <h3 class="tt-2-post-title" style="
+                            display:-webkit-box;
+                            -webkit-line-clamp:2;
+                            -webkit-box-orient:vertical;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            margin-top: 5px">
+                                <a href="#">“Website load nhanh, phim cập nhật liên tục, rất đáng trải nghiệm.”</a>
+                            </h3>
+                            <a href="#" class="tt-2-post-btn">Xem Chi Tiết</a>
                         </div>
                     </div>
                 </div>
@@ -1117,17 +798,25 @@
                 <div class="col">
                     <div class="tt-2-post">
                         <div class="tt-2-post-img">
-                            <img src="assets/img/tt-2-article-1.jpg" alt="Post Image">
-                            <span class="date"><span class="number">21</span><span class="txt">Feb</span></span>
+                            <img src="https://ticstube-html.temptics.com/assets/img/post-1.jpg" alt="Review Image">
+                            <span class="date"><span class="number">01</span><span class="txt">Sep</span></span>
                         </div>
 
                         <div class="tt-2-post-txt">
                             <div class="tt-2-post-infos">
-                                <div class="tt-2-post-info"><img src="assets/img/user-icon-2.svg" alt="icon"> By Admin</div>
-                                <div class="tt-2-post-info"><img src="assets/img/comment-icon.svg" alt="icon"> 2 Comments</div>
+                                <div class="tt-2-post-info"><img src="{{ asset(config('app.asset_client_path') . '/img/user-icon-2.svg') }}" alt="icon"> Người dùng: Thu Trang</div>
+                                <div class="tt-2-post-info"><img src="{{ asset(config('app.asset_client_path') . '/img/comment-icon.svg') }}" alt="icon"> 4.5 Sao</div>
                             </div>
-                            <h3 class="tt-2-post-title"><a href="blog-details.html">How Accessibility Features Are Making Streaming Inclusive</a></h3>
-                            <a href="blog-details.html" class="tt-2-post-btn">Read More</a>
+                            <h3 class="tt-2-post-title" style="
+                            display:-webkit-box;
+                            -webkit-line-clamp:2;
+                            -webkit-box-orient:vertical;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            margin-top: 5px">
+                                <a href="#">“Kho phim rất đa dạng, dễ tìm, giao diện đẹp mắt.”</a>
+                            </h3>
+                            <a href="#" class="tt-2-post-btn">Xem Chi Tiết</a>
                         </div>
                     </div>
                 </div>
@@ -1145,16 +834,20 @@
                     <!-- txt -->
                     <div class="col-md-7">
                         <div class="tt-2-app-ad-txt">
-                            <h2 class="tt-2-app-ad-title">DOWNLOAD OUR APPS</h2>
-                            <p class="tt-2-app-ad-descr mb-0">Through trials and triumphs, challenges, and celebrations, our narrative unfolded. each chapter adding depth to our journey. Our milestones became markers of growth, testaments to the unwavering commitment of our team.</p>
+                            <h2 class="tt-2-app-ad-title">WELCOME TO MIXIMOVIE</h2>
+                            <p class="tt-2-app-ad-descr mb-0">
+                                Khám phá kho phim trực tuyến khổng lồ với hàng nghìn bộ phim lẻ, phim bộ, hoạt hình và TV Show
+                                được cập nhật liên tục mỗi ngày. Trải nghiệm xem phim nhanh, không giật lag,
+                                cùng giao diện hiện đại và dễ sử dụng.
+                            </p>
                         </div>
                     </div>
 
                     <!-- buttons -->
                     <div class="col-lg-4 col-md-5">
                         <div class="tt-2-app-ad-btns d-flex align-items-center justify-content-start justify-content-md-end gap-3">
-                            <a href="#"><img src="assets/img/app-store-btn.png" alt="App store button"></a>
-                            <a href="#"><img src="assets/img/play-store-btn.png" alt="Google play button"></a>
+                            <a href="#movies" class="btn btn-primary px-4 py-2">Khám Phá Ngay</a>
+                            <a href="#about" class="btn btn-outline-light px-4 py-2">Giới Thiệu</a>
                         </div>
                     </div>
                 </div>

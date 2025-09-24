@@ -776,11 +776,10 @@ input {
   margin: auto;
 }
 .tt-breadcrumb-container {
-  margin: 0 clamp(15px, 2.1vw, 40px);
+  margin: 0 clamp(0px, 2.1vw, 0px);
   background: url(../img/breadcrumb-bg.jpg) no-repeat center center/cover;
   text-align: center;
   color: var(--white);
-  border-radius: 10px;
   position: relative;
   z-index: 1;
   padding: clamp(48px, 4.99vw, 95px) 15px;
@@ -791,7 +790,6 @@ input {
   inset: 0;
   background: var(--gradient);
   z-index: -1;
-  border-radius: 10px;
   opacity: 60%;
   pointer-events: none;
 }
