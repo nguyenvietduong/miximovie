@@ -649,13 +649,13 @@ input {
 .tt-2-section-title {
   font-weight: 700;
   letter-spacing: -0.02em;
-  font-size: clamp(25px, 3.15vw, 60px);
+  font-size: clamp(25px, 3.15vw, 40px);
   color: var(--white);
-  margin-bottom: clamp(23px, 2.42vw, 46px);
+  margin-bottom: clamp(23px, 2.42vw, -5px);
 }
 
 .tt-section-spacing {
-  padding: clamp(60px, 6.31vw, 120px) 0;
+  padding: clamp(60px, 6.31vw, 50px) 0;
 }
 
 .tt-2-slider-nav {
@@ -3014,7 +3014,7 @@ input {
   color: var(--ttBlue);
 }
 .tt-2-web-series-item-genres {
-  color: var(--white);
+  color: #FFD875;
   font-size: clamp(13px, 0.84vw, 16px);
   margin-bottom: 0;
 }

@@ -9,7 +9,7 @@
 
 
     <!-- TOP 10 SECTION START -->
-    <section class="tt-2-top-10 tt-section-spacing">
+    {{-- <section class="tt-2-top-10 tt-section-spacing">
         <div class="tt-2-container">
             <h2 class="tt-2-section-title">TOP 10 MOVIES TO WATCH</h2>
 
@@ -19,7 +19,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-1.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">01</span>
                         </div>
@@ -29,7 +29,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-2.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">02</span>
                         </div>
@@ -39,7 +39,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-3.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">03</span>
                         </div>
@@ -49,7 +49,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-4.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">04</span>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-1.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">05</span>
                         </div>
@@ -69,7 +69,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-2.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">06</span>
                         </div>
@@ -79,7 +79,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-3.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">07</span>
                         </div>
@@ -89,7 +89,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-4.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">08</span>
                         </div>
@@ -99,7 +99,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-1.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">09</span>
                         </div>
@@ -109,7 +109,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-top-10-item">
                             <div class="tt-2-top-10-item-img">
-                                <img src="assets/img/top-10-2.jpg" alt="movie cover">
+                                <img src="https://i.pinimg.com/736x/dd/3e/24/dd3e24302c74c2d1d2ef6dbc1fe3565d.jpg" alt="movie cover">
                             </div>
                             <span class="number">10</span>
                         </div>
@@ -122,12 +122,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- TOP 10 SECTION END -->
 
 
     <!-- POPULAR SHOWS SECTION START -->
-    <section class="tt-2-popular-shows tt-section-spacing pt-0">
+    {{-- <section class="tt-2-popular-shows tt-section-spacing pt-0">
         <div class="tt-2-container">
             <h2 class="tt-2-section-title text-center">POPULAR TV SHOWS</h2>
 
@@ -224,30 +224,33 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- POPULAR SHOWS SECTION END -->
 
 
-    <!-- TRENDING MOVIES SECTION START -->
-    <section class="tt-2-trending-movies tt-section-spacing">
+    <!-- UPCOMING MOVIES SECTION START -->
+    <section class="tt-2-upcoming-movies tt-section-spacing">
         <div class="tt-2-container">
             <!-- heading -->
-            <div class="tt-2-trending-movies-heading text-center">
-                <span class="icon"><img src="assets/img/trending-movie-icon.svg" alt="icon"></span>
-                <h2 class="tt-2-section-title">TRENDING MOVIES</h2>
+            <div class="tt-2-section-heading d-flex align-items-center justify-content-between gap-4">
+                <h2 class="tt-2-section-title mb-0">Phim Hàn Quốc mới</h2>
+                <div class="tt-2-slider-nav mt-0 tt-2-upcoming-movies-slider-nav">
+                    <button class="prev"><i class="flaticon-left-arrow"></i></button>
+                    <button class="next"><i class="flaticon-right-arrow"></i></button>
+                </div>
             </div>
 
-            <!-- trending movies slider -->
-            <div class="swiper tt-2-trending-movies-slider">
+            <!-- slider -->
+            <div class="tt-2-upcoming-movies-slider swiper">
                 <div class="swiper-wrapper">
                     <!-- single movie -->
                     <div class="swiper-slide">
-                        <div class="tt-2-trending-movie">
-                            <div class="tt-2-trending-movie-img">
-                                <img src="assets/img/trending-2-1.jpg" alt="Movie Poster">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
+
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
                                     <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
                                     <div class="tt-2-trending-movie-infos">
@@ -263,12 +266,12 @@
 
                     <!-- single movie -->
                     <div class="swiper-slide">
-                        <div class="tt-2-trending-movie">
-                            <div class="tt-2-trending-movie-img">
-                                <img src="assets/img/trending-2-2.jpg" alt="Movie Poster">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
+
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
                                     <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
                                     <div class="tt-2-trending-movie-infos">
@@ -284,12 +287,12 @@
 
                     <!-- single movie -->
                     <div class="swiper-slide">
-                        <div class="tt-2-trending-movie">
-                            <div class="tt-2-trending-movie-img">
-                                <img src="assets/img/trending-2-3.jpg" alt="Movie Poster">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
+
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
                                     <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
                                     <div class="tt-2-trending-movie-infos">
@@ -305,12 +308,12 @@
 
                     <!-- single movie -->
                     <div class="swiper-slide">
-                        <div class="tt-2-trending-movie">
-                            <div class="tt-2-trending-movie-img">
-                                <img src="assets/img/trending-2-4.jpg" alt="Movie Poster">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
+
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
                                     <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
                                     <div class="tt-2-trending-movie-infos">
@@ -326,12 +329,12 @@
 
                     <!-- single movie -->
                     <div class="swiper-slide">
-                        <div class="tt-2-trending-movie">
-                            <div class="tt-2-trending-movie-img">
-                                <img src="assets/img/trending-2-5.jpg" alt="Movie Poster">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
+
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
                                     <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
                                     <div class="tt-2-trending-movie-infos">
@@ -347,12 +350,33 @@
 
                     <!-- single movie -->
                     <div class="swiper-slide">
-                        <div class="tt-2-trending-movie">
-                            <div class="tt-2-trending-movie-img">
-                                <img src="assets/img/trending-2-1.jpg" alt="Movie Poster">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
+
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
                                     <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
                                     <div class="tt-2-trending-movie-infos">
@@ -369,15 +393,12 @@
             </div>
         </div>
     </section>
-    <!-- TRENDING MOVIES SECTION END -->
 
-
-    <!-- UPCOMING MOVIES SECTION START -->
     <section class="tt-2-upcoming-movies tt-section-spacing">
         <div class="tt-2-container">
             <!-- heading -->
             <div class="tt-2-section-heading d-flex align-items-center justify-content-between gap-4">
-                <h2 class="tt-2-section-title mb-0">UPCOMING MOVIES</h2>
+                <h2 class="tt-2-section-title mb-0">Phim Trung Quốc mới</h2>
                 <div class="tt-2-slider-nav mt-0 tt-2-upcoming-movies-slider-nav">
                     <button class="prev"><i class="flaticon-left-arrow"></i></button>
                     <button class="next"><i class="flaticon-right-arrow"></i></button>
@@ -391,7 +412,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/upcoming-2-1.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -412,7 +433,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/upcoming-2-2.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -433,7 +454,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/upcoming-2-3.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -454,7 +475,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/upcoming-2-4.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -475,7 +496,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/upcoming-2-5.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -496,7 +517,7 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/upcoming-2-6.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -517,7 +538,172 @@
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
                             <div class="tt-2-upcoming-movie-img">
-                                <img src="assets/img/trending-2-4.jpg" alt="Image">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tt-2-upcoming-movies tt-section-spacing">
+        <div class="tt-2-container">
+            <!-- heading -->
+            <div class="tt-2-section-heading d-flex align-items-center justify-content-between gap-4">
+                <h2 class="tt-2-section-title mb-0">Phim US-UK mới</h2>
+                <div class="tt-2-slider-nav mt-0 tt-2-upcoming-movies-slider-nav">
+                    <button class="prev"><i class="flaticon-left-arrow"></i></button>
+                    <button class="next"><i class="flaticon-right-arrow"></i></button>
+                </div>
+            </div>
+
+            <!-- slider -->
+            <div class="tt-2-upcoming-movies-slider swiper">
+                <div class="swiper-wrapper">
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
+                            </div>
+
+                            <div class="tt-2-trending-movie-txt">
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">Knight Of Dark</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="assets/img/star-icon-line.svg" alt="icon"> 6.8</span>
+                                        <span><img src="assets/img/clock-icon-line.svg" alt="icon"> 02h 30m</span>
+                                        <span><img src="assets/img/4k-icon.svg" alt="icon"> 4k Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">Action, Drama, Crime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-upcoming-movie">
+                            <div class="tt-2-upcoming-movie-img">
+                                <img src="https://static.nutscdn.com/vimg/1920-0/cefec4c38cd1cb2ac0a81c4544e0ec2e/cefec4c38cd1cb2ac0a81c4544e0ec2e.webp" alt="Image">
                             </div>
 
                             <div class="tt-2-trending-movie-txt">
@@ -539,9 +725,50 @@
     </section>
     <!-- UPCOMING MOVIES SECTION END -->
 
+    <!-- TRENDING MOVIES SECTION START -->
+    <section class="tt-2-trending-movies tt-section-spacing">
+        <div class="tt-2-container">
+            <!-- heading -->
+            <div class="tt-2-trending-movies-heading text-center">
+                <span class="icon"><img src="{{ asset(config('app.asset_client_path') . '/img/trending-movie-icon.svg') }}" alt="icon"></span>
+                <h2 class="tt-2-section-title">Top 10 Phim Bộ Hôm Nay</h2>
+            </div>
+
+            <!-- trending movies slider -->
+            <div class="swiper tt-2-trending-movies-slider">
+                <div class="swiper-wrapper">
+
+                    @foreach ($top10TvSeriesTodayItems as $item)
+                    <!-- single movie -->
+                    <div class="swiper-slide">
+                        <div class="tt-2-trending-movie">
+                            <div class="tt-2-trending-movie-img">
+                                <img src="{{ $item['poster_url'] }}" alt="Movie Poster">
+                            </div>
+                            <div class="tt-2-trending-movie-txt">
+                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
+                                <div class="bottom">
+                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <div class="tt-2-trending-movie-infos">
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
+                                        <span><img src="{{ asset(config('app.asset_client_path') . '/img/4k-icon.svg') }}" alt="icon"> {{ $item['quality'] }} Quality</span>
+                                    </div>
+                                    <span class="tt-2-trending-movie-genres">{{ $item['english_title'] }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRENDING MOVIES SECTION END -->
 
     <!-- WEEKLY SHOWS SECTION START -->
-    <section class="tt-2-weekly-shows tt-section-spacing">
+    {{-- <section class="tt-2-weekly-shows tt-section-spacing">
         <div class="tt-2-container">
             <h2 class="tt-2-section-title text-center">WEEKLY POPOULAR SHOWS</h2>
 
@@ -729,210 +956,108 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- WEEKLY SHOWS SECTION END -->
 
     <!-- WEB SERIES SECTION START -->
     <section class="tt-2-web-series tt-section-spacing">
         <div class="tt-2-container">
             <!-- heading -->
-            <h2 class="tt-2-section-title text-center">TOP TRENDING WEB SERIES</h2>
+            <h2 class="tt-2-section-title text-center">Kho Tàng Anime Mới Nhất</h2>
         </div>
 
         <!-- slider -->
         <div class="swiper tt-2-web-series-slider">
             <div class="swiper-wrapper">
+
+                @foreach ($latestAnimeCollectionItems as $item)
                 <!-- single web series -->
                 <div class="swiper-slide">
                     <div class="tt-2-web-series-item">
                         <div class="tt-2-web-series-item-img">
-                            <img src="assets/img/trending-2-2.jpg" alt="Web Series Poster">
+                            <img src="{{ $item['poster_url'] }}" alt="Web Series Poster">
                         </div>
                         <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title"><a href="video-details.html">WINDTALKERS</a></h3>
-                            <p class="tt-2-web-series-item-genres">Action, Drama, Crime</p>
+                            <h3 class="tt-2-web-series-item-title" 
+                                    style="
+                                       display:-webkit-box;
+                                       -webkit-line-clamp:2;
+                                       -webkit-box-orient:vertical;
+                                       overflow:hidden;
+                                       text-overflow:ellipsis;
+                                       margin-top: 5px"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                            <p class="tt-2-web-series-item-genres">{{ $item['english_title'] }}</p>
+
+                            @php($stars = (int) round((float)(parseImdbRating($item['imdb_rating'])) / 2))
+
                             <div class="tt-2-web-series-item-rating">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
+                                @for ($i = 1; $i <= 5; $i++)
+                                    @php($fill = $i <= $stars ? '#FF9046' : '#7A7976')
+                                    <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z"
+                                            fill="{{ $fill }}" />
+                                    </svg>
+                                @endfor
                             </div>
 
                             <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
+            </div>
+        </div>
+    </section>
+
+    {{-- --------------------------------------------------------- --}}
+
+    <section class="tt-2-web-series tt-section-spacing">
+        <div class="tt-2-container">
+            <!-- heading -->
+            <h2 class="tt-2-section-title text-center">Bắc Rạp Xem Phim Hàn</h2>
+        </div>
+
+        <!-- slider -->
+        <div class="swiper tt-2-web-series-slider">
+            <div class="swiper-wrapper">
+
+                @foreach ($koreanCinemaScreeningItems as $item)
                 <!-- single web series -->
                 <div class="swiper-slide">
                     <div class="tt-2-web-series-item">
                         <div class="tt-2-web-series-item-img">
-                            <img src="assets/img/trending-2-3.jpg" alt="Web Series Poster">
+                            <img src="{{ $item['poster_url'] }}" alt="Web Series Poster">
                         </div>
                         <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title"><a href="video-details.html">WINDTALKERS</a></h3>
-                            <p class="tt-2-web-series-item-genres">Action, Drama, Crime</p>
+                            <h3 class="tt-2-web-series-item-title" 
+                                    style="
+                                       display:-webkit-box;
+                                       -webkit-line-clamp:2;
+                                       -webkit-box-orient:vertical;
+                                       overflow:hidden;
+                                       text-overflow:ellipsis;
+                                       margin-top: 5px"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                            <p class="tt-2-web-series-item-genres">{{ $item['english_title'] }}</p>
+
+                            @php($stars = (int) round((float)(parseImdbRating($item['imdb_rating'])) / 2))
+
                             <div class="tt-2-web-series-item-rating">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
+                                @for ($i = 1; $i <= 5; $i++)
+                                    @php($fill = $i <= $stars ? '#FF9046' : '#7A7976')
+                                    <svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z"
+                                            fill="{{ $fill }}" />
+                                    </svg>
+                                @endfor
                             </div>
 
                             <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <!-- single web series -->
-                <div class="swiper-slide">
-                    <div class="tt-2-web-series-item">
-                        <div class="tt-2-web-series-item-img">
-                            <img src="assets/img/trending-2-4.jpg" alt="Web Series Poster">
-                        </div>
-                        <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title"><a href="video-details.html">WINDTALKERS</a></h3>
-                            <p class="tt-2-web-series-item-genres">Action, Drama, Crime</p>
-                            <div class="tt-2-web-series-item-rating">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                            </div>
-
-                            <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single web series -->
-                <div class="swiper-slide">
-                    <div class="tt-2-web-series-item">
-                        <div class="tt-2-web-series-item-img">
-                            <img src="assets/img/upcoming-2-3.jpg" alt="Web Series Poster">
-                        </div>
-                        <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title"><a href="video-details.html">WINDTALKERS</a></h3>
-                            <p class="tt-2-web-series-item-genres">Action, Drama, Crime</p>
-                            <div class="tt-2-web-series-item-rating">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                            </div>
-
-                            <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single web series -->
-                <div class="swiper-slide">
-                    <div class="tt-2-web-series-item">
-                        <div class="tt-2-web-series-item-img">
-                            <img src="assets/img/upcoming-2-5.jpg" alt="Web Series Poster">
-                        </div>
-                        <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title"><a href="video-details.html">WINDTALKERS</a></h3>
-                            <p class="tt-2-web-series-item-genres">Action, Drama, Crime</p>
-                            <div class="tt-2-web-series-item-rating">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                            </div>
-
-                            <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single web series -->
-                <div class="swiper-slide">
-                    <div class="tt-2-web-series-item">
-                        <div class="tt-2-web-series-item-img">
-                            <img src="assets/img/upcoming-2-6.jpg" alt="Web Series Poster">
-                        </div>
-                        <div class="tt-2-web-series-item-txt">
-                            <h3 class="tt-2-web-series-item-title"><a href="video-details.html">WINDTALKERS</a></h3>
-                            <p class="tt-2-web-series-item-genres">Action, Drama, Crime</p>
-                            <div class="tt-2-web-series-item-rating">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#FF9046" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.418 4.85156L14.3555 5.45312C14.7018 5.50781 14.9388 5.69922 15.0664 6.02734C15.1576 6.3737 15.0846 6.67448 14.8477 6.92969L12.0039 9.71875L12.6602 13.7383C12.7148 14.0846 12.5964 14.3672 12.3047 14.5859C12.013 14.7865 11.7122 14.8047 11.4023 14.6406L7.875 12.7812L4.375 14.6406C4.04688 14.8047 3.73698 14.7865 3.44531 14.5859C3.17188 14.3672 3.05339 14.0846 3.08984 13.7383L3.77344 9.71875L0.929688 6.92969C0.674479 6.67448 0.601562 6.3737 0.710938 6.02734C0.820312 5.69922 1.04818 5.50781 1.39453 5.45312L5.33203 4.85156L7.08203 1.24219C7.26432 0.932292 7.52865 0.768229 7.875 0.75C8.23958 0.768229 8.50391 0.932292 8.66797 1.24219L10.418 4.85156Z" fill="#7A7976" />
-                                </svg>
-                            </div>
-
-                            <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

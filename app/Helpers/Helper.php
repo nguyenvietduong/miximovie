@@ -336,3 +336,39 @@ if (!function_exists('checkBladeAdmin')) {
         }
     }
 }
+
+if (!function_exists('formatRuntime')) {
+    /**
+     * Chuyển số phút thành định dạng "Xh Yp"
+     *
+     * @param int|null $minutes
+     * @return string
+     */
+    function formatRuntime(?int $minutes): string
+    {
+        if (empty($minutes) || $minutes <= 0) {
+            return 'N/A';
+        }
+
+        $hours = intdiv($minutes, 60);
+        $mins  = $minutes % 60;
+
+        if ($hours > 0 && $mins > 0) {
+            return "{$hours}h {$mins}p";
+        } elseif ($hours > 0) {
+            return "{$hours}h";
+        } else {
+            return "{$mins}p";
+        }
+    }
+}
+
+if (! function_exists('parseImdbRating')) {
+    function parseImdbRating($rating)
+    {
+        if (is_array($rating)) {
+            return $rating['value'] ?? 0;
+        }
+        return $rating ?? 0;
+    }
+}
