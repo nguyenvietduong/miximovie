@@ -4,7 +4,7 @@
             <a href="#"><img src="{{ asset(config('app.asset_client_path') . '/image/logo.png') }}" alt="logo"></a>
             <div class="tt-footer-top__links">
                 <a href="index-2.html">Trang Chủ</a>
-                <a href="about.html">Thể Loại</a>
+                <a href="about.html">Danh Sách Phim</a>
                 <a href="#">Phim Lẻ</a>
                 <a href="pricing-plan.html">Phim Bộ</a>
                 <a href="contact.html">Quốc Gia</a>

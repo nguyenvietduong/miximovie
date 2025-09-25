@@ -330,7 +330,7 @@
             <div class="tt-2-upcoming-movies-slider swiper">
                 <div class="swiper-wrapper">
 
-                    @foreach ($chinaMoviesHotItems as $item)
+                    @foreach ($USUKMoviesHotItems as $item)
                     <!-- single movie -->
                     <div class="swiper-slide">
                         <div class="tt-2-upcoming-movie">
@@ -361,7 +361,7 @@
     <!-- UPCOMING MOVIES SECTION END -->
 
     <!-- TRENDING MOVIES SECTION START -->
-    <section class="tt-2-trending-movies tt-section-spacing">
+    <section class="tt-2-trending-movies tt-section-spacing-custom">
         <div class="tt-2-container">
             <!-- heading -->
             <div class="tt-2-trending-movies-heading text-center">
@@ -595,7 +595,7 @@
     <!-- WEEKLY SHOWS SECTION END -->
 
     <!-- WEB SERIES SECTION START -->
-    <section class="tt-2-web-series tt-section-spacing">
+    <section class="tt-2-web-series tt-section-spacing-custom">
         <div class="tt-2-container">
             <!-- heading -->
             <h2 class="tt-2-section-title text-center">Kho Tàng Anime Mới Nhất</h2>
@@ -641,7 +641,7 @@
         </div>
     </section>
 
-    <section class="tt-2-trending-movies tt-section-spacing">
+    <section class="tt-2-trending-movies tt-section-spacing-custom">
         <div class="tt-2-container">
             <!-- heading -->
             <div class="tt-2-trending-movies-heading text-center">
@@ -681,7 +681,7 @@
         </div>
     </section>
 
-    <section class="tt-2-web-series tt-section-spacing">
+    <section class="tt-2-web-series tt-section-spacing-custom">
         <div class="tt-2-container">
             <!-- heading -->
             <h2 class="tt-2-section-title text-center">Bắc Rạp Xem Phim Hàn</h2>
@@ -730,7 +730,7 @@
 
 
     <!-- POSTS SECTION START -->
-    <section class="tt-2-posts tt-section-spacing">
+    <section class="tt-2-posts tt-section-spacing-custom">
         <div class="tt-2-container">
             <!-- heading -->
             <div class="tt-2-posts-heading d-flex align-items-center justify-content-between gap-4">
@@ -827,33 +827,7 @@
 
 
     <!-- APP AD SECTION START -->
-    <section class="tt-2-app-ad">
-        <div class="tt-2-container">
-            <div class="tt-2-app-ad-content">
-                <div class="row align-items-center justify-content-between g-4">
-                    <!-- txt -->
-                    <div class="col-md-7">
-                        <div class="tt-2-app-ad-txt">
-                            <h2 class="tt-2-app-ad-title">WELCOME TO MIXIMOVIE</h2>
-                            <p class="tt-2-app-ad-descr mb-0">
-                                Khám phá kho phim trực tuyến khổng lồ với hàng nghìn bộ phim lẻ, phim bộ, hoạt hình và TV Show
-                                được cập nhật liên tục mỗi ngày. Trải nghiệm xem phim nhanh, không giật lag,
-                                cùng giao diện hiện đại và dễ sử dụng.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- buttons -->
-                    <div class="col-lg-4 col-md-5">
-                        <div class="tt-2-app-ad-btns d-flex align-items-center justify-content-start justify-content-md-end gap-3">
-                            <a href="#movies" class="btn btn-primary px-4 py-2">Khám Phá Ngay</a>
-                            <a href="#about" class="btn btn-outline-light px-4 py-2">Giới Thiệu</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('client.component.app-ad-section-start')
     <!-- APP AD SECTION END -->
 </main>
 @endsection

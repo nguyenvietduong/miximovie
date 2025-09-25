@@ -10,5 +10,3 @@
 <script src="{{ asset(config('app.asset_client_path') . '/js/tab.js') }}"></script>
 <!-- <script src="assets/js/header.js"></script> -->
 <script src="{{ asset(config('app.asset_client_path') . '/js/accordion.js') }}"></script>
-<script src="{{ asset(config('app.asset_client_path') . '/js/main-custom.js') }}"></script>
-<script src="{{ asset(config('app.asset_client_path') . '/js/jquery.magnific-popup.min.js') }}"></script>
