@@ -11,7 +11,7 @@
                     <div class="to-go-to-sidebar-in-mobile">
                         <div class="tt-2-header-nav">
                             <a href="{{ route('miximovie') }}">Trang Chủ</a>
-                            <a href="{{ route('ourmovie') }}">Danh Sách Phim</a>
+                            <a href="{{ route('our.movie') }}">Danh Sách Phim</a>
                             <a href="contact.html">Phim Lẻ</a>
                             <a href="contact.html">Phim Bộ</a>
                             <a href="contact.html">Quốc Gia</a>

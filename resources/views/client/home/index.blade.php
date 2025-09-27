@@ -254,7 +254,7 @@
 
                             <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
@@ -297,7 +297,7 @@
 
                             <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
@@ -340,7 +340,7 @@
 
                             <div class="tt-2-trending-movie-txt">
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
@@ -381,9 +381,9 @@
                                 <img src="{{ $item['poster_url'] }}" alt="Movie Poster">
                             </div>
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
+                                <a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
@@ -619,7 +619,7 @@
                                        -webkit-box-orient:vertical;
                                        overflow:hidden;
                                        text-overflow:ellipsis;
-                                       margin-top: 5px"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                       margin-top: 5px"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                             <p class="tt-2-web-series-item-genres">{{ $item['english_title'] }}</p>
 
                             @php($stars = (int) round((float)(parseImdbRating($item['imdb_rating'])) / 2))
@@ -631,7 +631,7 @@
                                     @endfor
                             </div>
 
-                            <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
+                            <a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
                         </div>
                     </div>
                 </div>
@@ -661,9 +661,9 @@
                                 <img src="{{ $item['poster_url'] }}" alt="Movie Poster">
                             </div>
                             <div class="tt-2-trending-movie-txt">
-                                <a href="https://youtu.be/oFkbsEKaoSE?si=q7AuCViipRzJNd9q" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
+                                <a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}" class="tt-2-trending-movie-btn tt-2-popular-show-btn" data-fslightbox="trending-movies"><i class="flaticon-play-button"></i></a>
                                 <div class="bottom">
-                                    <h3 class="tt-2-trending-movie-title"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                    <h3 class="tt-2-trending-movie-title"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                                     <div class="tt-2-trending-movie-infos">
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/star-icon-line.svg') }}" alt="icon"> {{ parseImdbRating($item['imdb_rating'] ?? null) }}</span>
                                         <span><img src="{{ asset(config('app.asset_client_path') . '/img/clock-icon-line.svg') }}" alt="icon"> {{ formatRuntime($item['runtime']) }}</span>
@@ -705,7 +705,7 @@
                                        -webkit-box-orient:vertical;
                                        overflow:hidden;
                                        text-overflow:ellipsis;
-                                       margin-top: 5px"><a href="video-details.html">{{ $item['title'] }}</a></h3>
+                                       margin-top: 5px"><a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}">{{ $item['title'] }}</a></h3>
                             <p class="tt-2-web-series-item-genres">{{ $item['english_title'] }}</p>
 
                             @php($stars = (int) round((float)(parseImdbRating($item['imdb_rating'])) / 2))
@@ -717,7 +717,7 @@
                                     @endfor
                             </div>
 
-                            <a href="https://youtu.be/y8aMrmW4w-E?si=DDz5RGRR0y2rhmZD" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
+                            <a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}" data-fslightbox="web-series" class="tt-2-web-series-item-btn"><span class="txt">Watch Now</span><i class="flaticon-play-button"></i></a>
                         </div>
                     </div>
                 </div>

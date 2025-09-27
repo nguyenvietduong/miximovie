@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\OurMovieController;
+use App\Http\Controllers\Client\MovieDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,5 @@ use App\Http\Controllers\Client\OurMovieController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('miximovie');
-Route::get('/our-movie', [OurMovieController::class, 'index'])->name('ourmovie');
+Route::get('/our-movie', [OurMovieController::class, 'index'])->name('our.movie');
+Route::get('/movie/detail/{_id}', [MovieDetailController::class, 'index'])->name('movie.detail');

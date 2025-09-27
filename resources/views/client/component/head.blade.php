@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="{{ asset(config('app.asset_client_path') . '/vendor/bootstrap/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset(config('app.asset_client_path') . '/vendor/swiper/swiper-bundle.min.css') }}">
 <link rel="stylesheet" href="{{ asset(config('app.asset_client_path') . '/vendor/animate-wow/animate.min.css') }}">
+<link rel="stylesheet" href="../cdn.plyr.io/3.7.8/plyr.css" />
 
 <!-- custom CSS -->
 <link rel="stylesheet" href="{{ asset(config('app.asset_client_path') . '/css/style.css') }}">

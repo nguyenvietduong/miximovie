@@ -76,6 +76,7 @@ class MovieController extends Controller
         return response()->json([
             'success'    => true,
             'html'    => $html,
+            'data'    => $data['result']['items'],
             'pagination' => [
                 'current_page' => number_format($page),
                 'last_page'    => number_format($data['result']['page_count']),

@@ -192,5 +192,6 @@ return [
         'backdrop_path' => env('BACKDROP_PATH', 'https://static.nutscdn.com/vimg/1920-0/'),
         'poster_path'   => env('POSTER_PATH', 'https://static.nutscdn.com/vimg/1920-0/'),
         'title_path'    => env('TITLE_PATH', 'https://static.nutscdn.com/vimg/0-260/'),
+        'cast_path' => env('CAST_PATH', 'https://image.tmdb.org/t/p/w500'),
     ],
 ];

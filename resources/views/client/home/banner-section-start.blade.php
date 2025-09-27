@@ -35,7 +35,7 @@
                                     {{ $item['overview'] }}
                                 </p>
                                 <div class="tt-2-banner-btns">
-                                    <a href="#" class="tt-2-btn">Xem ngay <i class="flaticon-play-button"></i></a>
+                                    <a href="{{ route('movie.detail', ['_id' => $item['_id']]) }}" class="tt-2-btn">Xem ngay <i class="flaticon-play-button"></i></a>
                                 </div>
                             </div>
 
